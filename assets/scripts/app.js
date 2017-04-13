@@ -20,6 +20,7 @@ import bookmarklet from './evolution/bookmarklet'
 import demoComponent from './evolution/demo-component'
 import readabilityPanel from './evolution/readability_improvement_panel'
 import herald from './evolution/herald'
+<<<<<<< HEAD
 import paragraphGallery from './evolution/paragraph-gallery'
 import popover from './evolution/pop_over'
 import ikonize from './evolution/ikon'
@@ -32,6 +33,9 @@ import curtain from './evolution/curtain'
 import text2speech from './evolution/text2speech'
 import svg_pagination from './evolution/svg_pagination'
 import divTable from './evolution/div_table'
+=======
+import carouselWithDroppingCircleNav from './evolution/carousel_with_dropping_circle_nav'
+>>>>>>> made changes
 
 /************************************************************************
  *
