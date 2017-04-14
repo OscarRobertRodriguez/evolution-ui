@@ -6,12 +6,11 @@ export default function() {
   let innerCircles = document.querySelectorAll('.evo_c-nav-drop-carousel__drop-label');
   let slides = document.querySelectorAll('.evo_c-nav-drop-carousel__slide');
 
-
+ if (dropCircles.length > 0) {
   dropCircles.forEach(function(element, index) {
-
     element.addEventListener('click', drop)
   });
-
+}
   /* controls the drop for circle buttons except last one */
 
   function drop(e) {
@@ -47,6 +46,7 @@ export default function() {
       /* these statements will remove the circles that are  above classes */
       dropCircles[0].classList.remove('js-drop');
       innerCircles[0].classList.remove('js-selected');
+      slides[0].classList.remove('js-slide__show');
       /* these statements add to the circle that was clicked on in this case circle 2 */
       outerCircle.classList.add('js-drop');
       circle.classList.add('js-selected');
@@ -68,6 +68,7 @@ export default function() {
       for (var i = 0; i < 2; i++) {
         dropCircles[i].classList.remove('js-drop');
         innerCircles[i].classList.remove('js-selected');
+        slides[i].classList.remove('js-slide__show');
       }
 
 
@@ -94,6 +95,7 @@ export default function() {
       for (var i = 0; i < 3; i++) {
         dropCircles[i].classList.remove('js-drop');
         innerCircles[i].classList.remove('js-selected');
+        slides[i].classList.remove('js-slide__show');
       }
 
 
@@ -120,6 +122,7 @@ export default function() {
       for (var i = 0; i < 4; i++) {
         dropCircles[i].classList.remove('js-drop');
         innerCircles[i].classList.remove('js-selected');
+        slides[i].classList.remove('js-slide__show');
       }
 
 
@@ -134,6 +137,8 @@ export default function() {
 
 
   /* function that pushes last circle to bottom immediately */
+
+  if (dropCircles.length > 0) {
   (function defaultDrop() {
     slides = document.querySelectorAll('.evo_c-nav-drop-carousel__slide');
     var circle = document.getElementById('drop-5');
@@ -144,6 +149,6 @@ export default function() {
     outerCircle.classList.add('js-drop');
     circle.classList.add('js-selected');
   }());
-
+ }
 
 }
