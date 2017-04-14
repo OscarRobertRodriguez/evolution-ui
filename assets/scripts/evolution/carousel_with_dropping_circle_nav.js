@@ -6,11 +6,20 @@ export default function() {
   let innerCircles = document.querySelectorAll('.evo_c-nav-drop-carousel__drop-label');
   let slides = document.querySelectorAll('.evo_c-nav-drop-carousel__slide');
 
+<<<<<<< HEAD
  if (dropCircles.length > 0) {
   dropCircles.forEach(function(element, index) {
     element.addEventListener('click', drop)
   });
 }
+=======
+
+  dropCircles.forEach(function(element, index) {
+
+    element.addEventListener('click', drop)
+  });
+
+>>>>>>> 486bd9c02c255b5f12e445c6c1367cfdb5228c83
   /* controls the drop for circle buttons except last one */
 
   function drop(e) {
@@ -46,7 +55,10 @@ export default function() {
       /* these statements will remove the circles that are  above classes */
       dropCircles[0].classList.remove('js-drop');
       innerCircles[0].classList.remove('js-selected');
+<<<<<<< HEAD
       slides[0].classList.remove('js-slide__show');
+=======
+>>>>>>> 486bd9c02c255b5f12e445c6c1367cfdb5228c83
       /* these statements add to the circle that was clicked on in this case circle 2 */
       outerCircle.classList.add('js-drop');
       circle.classList.add('js-selected');
@@ -68,7 +80,10 @@ export default function() {
       for (var i = 0; i < 2; i++) {
         dropCircles[i].classList.remove('js-drop');
         innerCircles[i].classList.remove('js-selected');
+<<<<<<< HEAD
         slides[i].classList.remove('js-slide__show');
+=======
+>>>>>>> 486bd9c02c255b5f12e445c6c1367cfdb5228c83
       }
 
 
@@ -95,7 +110,10 @@ export default function() {
       for (var i = 0; i < 3; i++) {
         dropCircles[i].classList.remove('js-drop');
         innerCircles[i].classList.remove('js-selected');
+<<<<<<< HEAD
         slides[i].classList.remove('js-slide__show');
+=======
+>>>>>>> 486bd9c02c255b5f12e445c6c1367cfdb5228c83
       }
 
 
@@ -122,7 +140,10 @@ export default function() {
       for (var i = 0; i < 4; i++) {
         dropCircles[i].classList.remove('js-drop');
         innerCircles[i].classList.remove('js-selected');
+<<<<<<< HEAD
         slides[i].classList.remove('js-slide__show');
+=======
+>>>>>>> 486bd9c02c255b5f12e445c6c1367cfdb5228c83
       }
 
 
@@ -137,8 +158,11 @@ export default function() {
 
 
   /* function that pushes last circle to bottom immediately */
+<<<<<<< HEAD
 
   if (dropCircles.length > 0) {
+=======
+>>>>>>> 486bd9c02c255b5f12e445c6c1367cfdb5228c83
   (function defaultDrop() {
     slides = document.querySelectorAll('.evo_c-nav-drop-carousel__slide');
     var circle = document.getElementById('drop-5');
@@ -149,6 +173,10 @@ export default function() {
     outerCircle.classList.add('js-drop');
     circle.classList.add('js-selected');
   }());
+<<<<<<< HEAD
  }
+=======
+
+>>>>>>> 486bd9c02c255b5f12e445c6c1367cfdb5228c83
 
 }
